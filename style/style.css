@@ -12,6 +12,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    scroll-behavior: smooth
+}
 
 .container {
     width: 1140px;
@@ -217,4 +220,90 @@
 #current-target .card .card-img img {
     width: 100%;
     height: 100;
+}
+
+/* Need support section styles  */
+#need-support .container {
+    /* background: linear-gradient(rgba(0,0,0,.5) ,url(../assets/handshake.jpg)); */
+    background-image: linear-gradient(rgba(0,0,0,.4) ,rgba(0,0,0,.4)),url("../assets/handshake.jpg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 1000px; */
+    background-position: center;
+    margin: 0 auto 100px;
+    border-radius: 14px;
+}
+#need-support .container .title {
+    color: rgb(255, 255, 255);
+}
+#need-support .container .description {
+    color: rgb(255, 255, 255);
+    margin: 20px 0 36px;
+}
+
+#need-support .container .support-data {
+    padding: 0px 48px;
+    width: 700px;
+    margin: auto
+}
+#need-support form {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+#need-support form input {
+    border-radius: 8px;
+    border: none;
+}
+#need-support form input:first-child {
+    width: 500px;
+    padding: 19px 20px;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    background: rgb(255, 255, 255);
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0%;
+}
+#need-support form input:last-child {
+    padding: 17px 20px;
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+}
+#footer {
+    border-radius: 16px;
+    background: rgba(13, 19, 33, 0.03);
+}
+#footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0 !important;
+}
+#footer .container h5 {
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+#footer .container .social-icons {
+
+}
+#footer .container .social-icons a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-left: 15px;
 }
