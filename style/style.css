@@ -12,20 +12,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    width: 1140px;
+    margin: 60px auto;
+}
+.title {
+    color: rgb(13, 19, 33);
+    font-family: "Azeret Mono", monospace;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 37px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.description {
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    opacity: .7;
+}
+/* Hero Banner Styles  */
 #hero {
     background: url("../assets/Hero-bg.png");
     /* background-size: cover;
     background-position: center;
     background-repeat: no-repeat; */
-    height: 652px
+    height: 652px;
+    display: flex;
+    align-items: center
 }
 #hero .hero-container {
     width: 998px;
     height: auto;
-    margin: 26px auto 44px;
+    margin: 26px auto 26px;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+
 }
 #hero .hero-container .img {
     width: 240px;
@@ -37,24 +66,19 @@
 
 }
 #hero .hero-container .title {
-    color: rgb(13, 19, 33);
-    font-family: "Azeret Mono", monospace;
     font-size: 42px;
-    font-weight: 800;
     line-height: 58px;
-    letter-spacing: 0%;
-    text-align: center;
     margin-bottom: 24px;
 }
 #hero .hero-container .description {
-    color: rgb(13, 19, 33);
+    /* color: rgb(13, 19, 33);
     font-family: Azeret Mono;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0%;
     text-align: center;
-    opacity: .7;
+    opacity: .7; */
     margin-bottom: 32px;
 }
 #hero .hero-container .cta-btn {
@@ -69,4 +93,70 @@
     letter-spacing: 0%;
     text-align: center;
     text-decoration: none;
+}
+
+/* Why web development section Styles */
+
+#why-dev {
+
+}
+#why-dev .container {
+    padding: 40px 60px;
+    background-color: rgba(13, 19, 33, 0.05);
+}
+#why-dev .container .header {
+    padding: 0 48px 48px;
+    border-radius: 16px;
+}
+
+#why-dev .container .header .title{
+    margin-bottom: 24px
+}
+
+#why-dev .container .card {
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+#why-dev .container .card .card-data{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px; */
+}
+#why-dev .container .card .title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 24px;
+    text-align: left;
+    opacity: .8;
+}
+#why-dev .container .card .description {
+    text-align: left;
+}
+#why-dev .container .card .card-btn {
+    border: 1px solid rgb(13, 19, 33);
+    opacity: 0.7;
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin-top: 24px;
+    display: inline-block;
+    transition: .3s ease-in-out;
+}
+#why-dev .container .card .card-btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+#why-dev .container .card .card-img img{
+    width: 275px;
+    height: 240px
 }
