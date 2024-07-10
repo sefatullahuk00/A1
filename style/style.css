@@ -16,7 +16,18 @@
 .container {
     width: 1140px;
     margin: 60px auto;
+    padding: 60px 0;
 }
+.header  {
+    padding: 0 48px 48px;
+    width: 1000px;
+    margin: auto;
+}
+
+.header .title{
+    margin-bottom: 24px
+}
+
 .title {
     color: rgb(13, 19, 33);
     font-family: "Azeret Mono", monospace;
@@ -44,7 +55,8 @@
     background-repeat: no-repeat; */
     height: 652px;
     display: flex;
-    align-items: center
+    align-items: center;
+    margin-bottom: 40px;
 }
 #hero .hero-container {
     width: 998px;
@@ -97,20 +109,10 @@
 
 /* Why web development section Styles */
 
-#why-dev {
-
-}
 #why-dev .container {
-    padding: 40px 60px;
+    padding: 60px;
     background-color: rgba(13, 19, 33, 0.05);
-}
-#why-dev .container .header {
-    padding: 0 48px 48px;
     border-radius: 16px;
-}
-
-#why-dev .container .header .title{
-    margin-bottom: 24px
 }
 
 #why-dev .container .card {
@@ -159,4 +161,15 @@
 #why-dev .container .card .card-img img{
     width: 275px;
     height: 240px
+}
+
+/* My Inspiration Section */
+
+#inspiration .inspiration-content {
+    border: 1px solid rgba(13, 19, 33, 0.2);
+    border-radius: 16px;
+    padding: 32px;
+}
+#inspiration .inspiration-content iframe {
+    border-radius: 14px;
 }
